@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+}
+body {
+    background-color: wheat;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    background-color: rgba(110, 58, 21);
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+nav div{
+    display: flex;
+    height: 100%;
+    margin-left: 5vw;
+    align-items: center;
+}
+nav div img {
+    width: 100%; height: 100%; object-fit: contain;
+}
+nav div h3 {
+    font-size: 3vh;
+    color: wheat;
+}
+nav ul {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a button {
+    padding: 1vh;
+    font-size: 1.5vh;
+    border: 2px solid #935c41;
+    background-color: #61222b;
+    color: wheat;
+    border-radius: 5px;
+    transition: ease-in-out 500ms;
+}
+.cpage {
+    border: 2px solid #61222b;
+    background-color: #935c41;
+}
+/* -========================================- */
+.wrapper {
+    width: 100vw;
+    height: 90%;
+    
+    background-image: url(imgs/cake-bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.top {
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    display: flex;
+    border-radius: 10px;
+    background-color: #563727a6;
+    justify-content: center;
+    margin: auto;
+}
+.left {
+    height: 100%;
+    width: 55%;
+    
+    border-radius: 10px 0 0 10px;
+}
+.top-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-left: 3vw;
+    height: 50vh;
+}
+.top-left div {
+    width: 20%;
+}
+.top-left h1 {
+    color: wheat;
+    font-weight: bolder;
+    font-size: 5vh;
+}
+.name {
+    width: 80%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: wheat;
+}
+hr {
+    margin: auto;
+    height: 5px;
+    background-color: chocolate;
+    border: #61222b solid 1px;
+}
+ul {
+    display: flex;
+}
+ul li {
+    list-style: none;
+    padding: 5px;
+    border: 0 1px 0 1px solid black;
+}
+.rigth {
+    width: 40%;
+}
+.rigth div {
+    width: 80%;
+    height: 100%;
+    animation: cakes 10s infinite;
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+nav ul li a button:hover {
+    border: 2px solid #61222b;
+    background-color: #935c41;
+}
+
+@keyframes cakes {
+    0% {
+        background-image: url(imgs/triple-chocolate-cake-4.jpg);
+    }
+    50%{
+        background-image: url(imgs/cake3.png);
+    }
+    100%{
+        background-image: url(imgs/cake4.png);
+    }
+}
+
+@media (max-width: 900px) {
+    .rigth {
+        display: none;
+    }
+    .left {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 680px) {
+    
+    nav div {
+        display: none;
+    }
+    .top-left {
+        flex-direction: column;
+    }
+    .top-left div {
+        width: 40%;
+    }
+    nav ul li {
+        padding: 10px;
+    }
+
+}
